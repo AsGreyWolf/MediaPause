@@ -1,13 +1,15 @@
-package com.asgreywolf.mediapause;
+package com.greysoft.mediapause;
 
 
 import java.io.DataOutputStream;
 import java.io.IOException;
 
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.app.Activity;
+import android.app.Instrumentation;
 
-public class MainActivityp extends Activity {
+public class MainActivity extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +22,7 @@ public class MainActivityp extends Activity {
 		}
 		DataOutputStream os=new DataOutputStream(p.getOutputStream());
 		try {
-			os.writeBytes("input keyevent 88\n");
+			os.writeBytes("input keyevent 85\n");
 			os.writeBytes("exit\n");
 			os.flush();
 		} catch (IOException e) {

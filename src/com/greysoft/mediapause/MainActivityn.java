@@ -1,4 +1,4 @@
-package com.asgreywolf.mediapause;
+package com.greysoft.mediapause;
 
 
 import java.io.DataOutputStream;
@@ -14,7 +14,7 @@ public class MainActivityn extends Activity {
 		super.onCreate(savedInstanceState);
 		Process p = null;
 		try {
-			p=Runtime.getRuntime().exec("su");
+			p=Runtime.getRuntime().exec("sh");
 		} catch (IOException e) {
 			finish();
 		}

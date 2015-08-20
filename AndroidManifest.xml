@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.asgreywolf.mediapause"
+    package="com.greysoft.mediapause"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -11,10 +11,10 @@
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
-        android:label="@string/app_name" 
-        android:theme="@android:style/Theme.Dialog">
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Dialog" >
         <activity
-            android:name="com.asgreywolf.mediapause.MainActivity"
+            android:name="com.greysoft.mediapause.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,25 +22,29 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-         <activity
-            android:name="com.asgreywolf.mediapause.MainActivityp"
-            android:label="@string/app_namep" 
-            android:icon="@drawable/ic_launcherp">
+        <activity
+            android:name="com.greysoft.mediapause.MainActivityp"
+            android:icon="@drawable/ic_launcherp"
+            android:label="@string/app_namep" >
             <intent-filter>
-<action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name="com.asgreywolf.mediapause.MainActivityn"
-            android:label="@string/app_namen"
-            android:icon="@drawable/ic_launchern" >
+            android:name="com.greysoft.mediapause.MainActivityn"
+            android:icon="@drawable/ic_launchern"
+            android:label="@string/app_namen" >
             <intent-filter>
-<action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <service android:name="AsService"></service>
+
+        <service android:name="AsService" >
+        </service>
     </application>
 
 </manifest>
